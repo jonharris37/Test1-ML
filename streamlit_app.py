@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('Machine learing app')
+st.title('Machine Learning App')
 
 st.write('My first ML learning app!')
