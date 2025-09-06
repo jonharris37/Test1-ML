@@ -14,7 +14,7 @@ if st.checkbox('Show text'):
 checkboxSidebar = st.sidebar.checkbox("Display another text")
 
 if checkboxSidebar:
-    st.write("Sidebar checkbox is checked!")
+    st.info("Sidebar checkbox information!")
 
 
 
