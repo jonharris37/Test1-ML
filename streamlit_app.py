@@ -6,7 +6,7 @@ st.write('My first ML learning app!')
 
 # add a checkbox ( user interaction)
 checkBox = st.checkbox("Display text")
-if checkBox:
+if True checkBox:
 
 st.text("Checkbox on!")
 
