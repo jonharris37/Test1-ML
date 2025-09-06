@@ -13,6 +13,10 @@ if st.checkbox('Show text'):
 # add side checkbox
 checkboxSidebar = st.sidebar.checkbox ("Display another text")
 
+if st. checkboxSideBar:
+   
+    st.text("Checkbox ON from the sidebar")
+   
 
 
 
