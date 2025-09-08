@@ -16,6 +16,9 @@ checkboxSidebar = st.sidebar.checkbox("Display another text")
 if checkboxSidebar:
     st.info("Sidebar checkbox information!")
 
+dataset = pandas.read_excel("../dataset/powerElectricalGeneration.xlsx")
+
+
 
 
 
