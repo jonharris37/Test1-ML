@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title('Machine Learning App')
-st.write('My first ML learning app!')
+st.write('Data science Project')
 
 checkBox = st.checkbox("Display text")
 
