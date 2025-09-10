@@ -17,6 +17,15 @@ checkboxSidebar = st.sidebar.checkbox("Display another text")
 if checkboxSidebar:
     st.info("Sidebar checkbox information!")
 
+url = "https://github.com/jonharris37/Test1-ML/raw/b0064f22d55c728e371e31aaac01cc9ee810520f/powerElectricGeneration%20(6).xlsx"
+
+try:
+    df = pd.read_excel(url)
+    st.success("Excel file loaded successfully!")
+    st.write(df.head())  # Show the first few rows
+except Exception as e:
+    st.error(f"Error loading Excel file: {e}")
+
 
 
 
