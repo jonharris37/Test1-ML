@@ -18,8 +18,10 @@ if checkboxSidebar:
     st.info("Sidebar checkbox information!")
 
 #load data
-dataset= pandas.read_excel ("../datasetpowerElectricGeneration (6).xlsx")
+df = pd.read_excel(url)                                              
 
+    dataset= pandas.read_excel ("../datasetpowerElectricGeneration (6).xlsx")
+                
 
 
 
