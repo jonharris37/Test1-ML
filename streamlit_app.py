@@ -20,7 +20,7 @@ if checkboxSidebar:
 #load data
 df = pd.read_excel(url)                                              
 
-    dataset= pandas.read_excel ("../datasetpowerElectricGeneration (6).xlsx")
+    dataset= pd.read_excel ("../datasetpowerElectricGeneration (6).xlsx")
                 
 
 
