@@ -17,7 +17,7 @@ checkboxSidebar = st.sidebar.checkbox("Display another text")
 if checkboxSidebar:
     st.info("Sidebar checkbox information!")
 
-url = "https://github.com/jonharris37/Test1-ML/raw/b0064f22d55c728e371e31aaac01cc9ee810520f/powerElectricGeneration%20(6).xlsx"
+url = file:///C:/Users/echo2/AppData/Local/Temp/lu683281nvxe.tmp/lu683281nvxk.tmp/powerElectricGeneration%20(6)%20(3).htm
 
 try:
     df = pd.read_excel(url)
