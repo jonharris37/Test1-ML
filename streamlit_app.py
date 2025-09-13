@@ -1,28 +1,30 @@
 import streamlit as st
-import pandas as pd  # ✅ correct import
+import pandas as pd
 
-st.title('Machine Learning App')
-st.write('Data science Project')
+# Title and description
+st.title("Machine Learning App")
+st.write("Data Science Project")
 
-checkBox = st.checkbox("Display text")
-
-st.title(" My ML App")
-
-if st.checkbox('Show text'):
+# Checkbox in main page
+if st.checkbox("Display text"):
     st.text("Checkbox on!")
 
-# add side checkbox
-checkboxSidebar = st.sidebar.checkbox("Display another text")
-
-if checkboxSidebar:
+# Checkbox in sidebar
+if st.sidebar.checkbox("Display another text"):
     st.info("Sidebar checkbox information!")
 
-#load data
-df = pd.read_excel(url)                                              
+# Load data
+# Change the file path to your actual dataset location
+file_path = "../datasetpowerElectricGeneration (6).xlsx"
 
-    dataset= pd.read_excel ("../datasetpowerElectricGeneration (6).xlsx")
-                
-
+try:
+    dataset = pd.read_excel(file_path)
+    st.subheader("Dataset Preview")
+    st.dataframe(dataset.head())  # Show first rows
+except FileNotFoundError:
+    st.error(f"File not found: {file_path}")
+except Exception as e:
+    st.error(f"Error loading dataset: {e}")
 
 
 
